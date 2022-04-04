@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles\style.css">
+    <script type="text/javascript" src="scripts/script.js" defer></script>
+</head>
+
+<body>
+
+    <div class="background">
+        <div class="sky">
+            <img src="images\nuvem.png" alt="sky">
+            <img src="images\nuvem.png" alt="sky">
+            <img src="images\nuvem.png" alt="sky">
+        </div>
+
+        <div class="city">
+            <img src="images\city.png" alt="city">
+            <img src="images\city.png" alt="city">
+        </div>
+
+        <div class="ground">
+            <img src="images\ground.png" class="ground">
+        </div>
+
+        <div class="topInfo">
+            <div class="buzzStatus">
+                <div class="buzzLife"></div>
+                <div class="buzzMana"></div>
+            </div>
+
+            <div class="communication invisible">    
+                <div class="chatRender">
+                </div>
+                <input type="text" class="chat" placeholder="digite uma mensagem" maxlength="60" onblur="buzzKit()" onfocus="chatRender()">
+            </div>
+        </div>
+
+        <div class="character">
+            <img src="images\buzzDefault.png" class="buzzDefault">
+            <img src="images\buzzAA.png" class="buzzAA">
+            <img src="images\buzzW.png" class="buzzW">
+            <img src="images\buzzJumpStart.png" class="buzzJumpStart">
+            <img src="images\buzzJumping.png" class="buzzJumping">
+            <img src="images\buzzJumpEnd.png" class="buzzJumpEnd">
+            <div class="spell"></div>   
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>

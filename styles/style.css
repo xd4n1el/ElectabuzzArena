@@ -1,0 +1,260 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.background {
+  position: relative;
+  background-color: skyblue;
+  height: 98vh;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  border: solid 1px red;
+  overflow: hidden;
+}
+
+.sky {
+  position: absolute;
+  width: 100%;
+  height: 90vh;
+  align-self: flex-start;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sky img {
+  width: 400px;
+  height: 300px;
+  margin: 0;
+  padding: 0;
+}
+
+.city {
+  position: absolute;
+  height: 700px;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.city img {
+  height: 100%;
+  width: 50%;
+}
+
+.ground {
+  position: absolute;
+  height: 100px;
+  width: 100%;
+}
+
+.topInfo {
+  position: absolute;
+  align-self: flex-start;
+  border: solid 1px red;
+  width: 100%;
+  height: 200px;
+}
+
+.buzzStatus {
+  border: solid 1px black;
+  width: 500px;
+  height: 80px;
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+}
+
+.buzzLife {
+  border: solid 1px black;
+  width: 100%;
+  height: 20px;
+  background-color: green;
+}
+
+.buzzMana {
+  border: solid 1px black;
+  width: 100%;
+  height: 20px;
+  background-color: blue;
+}
+
+.character {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  height: 160px;
+  width: 160px;
+  overflow: visible;
+}
+
+.spell {
+  opacity: 0%;
+  position: absolute;
+  height: 160px;
+  width: 160px;
+  overflow: visible;
+}
+
+
+@keyframes thunderRender {
+  0% {}
+  
+  25% {
+    transform: translate(2px, 5px);
+  }
+  
+  50% { 
+    transform: translate(4px, 10px);
+  }
+  
+  75% {
+    transform: translate(8px, 12px);
+  }
+  
+  100% {
+    transform: translate(10px, 16px);
+  }
+}
+
+.spell img {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  filter: opacity(100%) invert(20%) brightness(180%);
+}
+
+.buzzDefault {
+  height: 150px;
+  width: 100px;
+  filter: saturate(150%) contrast(140%) brightness(100%);
+  transform: scaleX(-1);
+}
+
+.buzzAA {
+  display: none;
+  width: 150px;
+  height: 150px;
+  height: 160px;
+  filter: saturate(180%) contrast(180%) brightness(85%);
+}
+
+.buzzW {
+  display: none;
+  filter: saturate(150%);
+  width: 90px;
+  height: 150px;
+}
+
+.buzzJumpStart {
+  display: none;
+  width: 120px;
+  filter: saturate(180%) brightness(80%) contrast(140%);
+  transform: scaleX(-1);
+}
+
+.buzzJumping {
+  display: none;
+  height: 150px;
+  width: 150px;
+  filter: saturate(100%) contrast(150%) brightness(100%);
+  transform: rotate(30deg) scaleX(-1);
+}
+
+.buzzJumpEnd {
+  display: none;
+  height: 140px;
+  width: 120px;
+  filter: saturate(180%) contrast(180%) brightness(85%);
+  transform: scaleX(-1);
+
+}
+
+.visible {
+  display: block;
+}
+
+.invisible {
+  display: none;
+}
+
+@keyframes changeOpacity {
+  0% {
+    opacity: 0%;
+  }
+  25% {
+    opacity: 20%;
+  }
+  50% {
+    opacity: 40%;
+  }
+  75% {
+    opacity: 60%;
+  }
+  100% {
+    opacity: 80%;
+  }
+}
+
+@keyframes changeOpacityReverse {
+  0% {
+    opacity: 80%;
+  }
+  25% {
+    opacity: 60%;
+  }
+  50% {
+    opacity: 40%;
+  }
+  75% {
+    opacity: 20%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+
+.thunderBlast {
+  background-color: yellow;
+  border-radius: 90px;
+  animation-name: changeOpacity;
+  animation-duration: 2s;
+}
+
+.thunderBlastReverse {
+  animation-name: changeOpacityReverse;
+  animation-duration: 3s;
+}
+
+.communication {
+  position: sticky;
+  width: 500px;
+  align-self: flex-start;
+
+  height: 200px;
+}
+
+.chat {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  align-self: flex-end;
+}
+
+.chat:focus, input:focus, select:focus {
+  box-shadow: 0 0 0 0;
+  border: none;
+  outline: 0;
+}
+
+.chatRender {
+  height: 180px;
+  width: 500px;
+  background-color: rgba(4, 4, 4, 0.5);
+}
+
+.chatRender p {
+  position: relative;
+  color: white;
+}

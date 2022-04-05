@@ -1,5 +1,4 @@
-## Este é apenas um projeto pessoal para treinar meus conhecimentos em programação, 
-## não havendo fins lucrativos.
+## Este é apenas um projeto pessoal para treinar meus conhecimentos em programação
 
 ## qualquer imagem com direitos autorais terão seus devidos créditos futuramente
 
